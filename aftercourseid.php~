@@ -1,0 +1,20 @@
+<html>
+Choose Exam <br><br>
+</html>
+
+<?php
+
+$con=mysqli_connect("localhost","root","","my_db");
+$res = mysqli_query($con,"SELECT EName from Exam where ECourseID = '$_POST[probs]'");
+$id = 1;
+while($row = mysqli_fetch_array($res)) {
+  echo "<div class = 'row'>
+<form action='http://localhost/skr/dbmsproj/examroom.php' method='post'>
+<button type='submit' formaction='ps.php' name = 'ps' method = 'post' value = '$row[0]'>$row[0]</button></div>
+</form>";
+  $id = $id + 1;
+  }
+  ?>
+  <html>
+<input action="action" type="button" value="Go Back" onclick="history.go(-1);" />
+</html>

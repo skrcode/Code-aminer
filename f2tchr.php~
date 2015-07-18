@@ -1,0 +1,8 @@
+<html>
+
+<form action="f3addprob.php" method="post">
+<input type="submit" value="Add Problem">
+
+</form>
+
+</html>

@@ -1,0 +1,15 @@
+<?php 
+	$con = mysqli_connect("localhost","root","","my_db"); 
+	$res = mysqli_query($con,"INSERT INTO Student VALUES($_POST[rno],'$_POST[pwd]','$_POST[sname]')");
+	if(!$res) {
+	    echo("Invalid Details---->" . mysqli_error($con));
+	}
+	else {
+	    echo "User Successfully Registered..!!!";
+	}
+?>
+
+<html>
+<input action="action" type="button" value="Go Back" onclick="history.go(-1);" />
+</html>
+

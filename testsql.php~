@@ -1,0 +1,15 @@
+<?php
+// Create connection
+$con=mysqli_connect("127.0.0.1","root");
+
+// Create table
+$sql="CREATE TABLE Persons(FirstName CHAR(30),LastName CHAR(30),Age INT)";
+
+// Execute query
+if (mysqli_query($con,$sql)) {
+  echo "Table persons created successfully";
+} else {
+  echo "Error creating table: " . mysqli_error($con);
+}
+//mysqli_query($con,"DROP DATABASE my_db");
+?>

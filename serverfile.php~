@@ -1,0 +1,14 @@
+<?php
+file_put_contents('storetxt.txt', $_POST["content"]);
+
+?>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <iframe src="storetxt.txt" width="1250" height="1000">
+    </iframe>
+  </body>
+</html>
+</html>

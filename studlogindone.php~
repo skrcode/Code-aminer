@@ -1,0 +1,13 @@
+<?php 
+	$con = mysqli_connect("localhost","root","","my_db"); 
+	$res = mysqli_query($con,"SELECT SPasswd from Student where RollNo = $_POST[rollno]");
+	while($row = mysqli_fetch_array($res)) {
+  		if(!strcmp($_POST["passwd"],$row["SPasswd"])) {
+  		    echo "Logged In..";
+  		}
+  		else {
+  		    echo "Invalid Roll Number and/or Password";
+  		}
+	} 
+?>
+

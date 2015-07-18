@@ -1,0 +1,37 @@
+
+<html>
+
+Insert Problem Name<br>
+<form action = "f4doneexam.php" method = "post">
+<input type = "text" name = "probname">
+<br><br>
+Insert Problem Description including sample input and output<br>
+<textarea id="textarea_1" name="probdescp" cols="175" rows="15">
+</textarea>
+
+<br><br>
+Insert Problem Source Code<br>
+<script language="javascript" type="text/javascript" src="editor/editarea_0_8_2/edit_area/edit_area_full.js"></script>
+<script language="javascript" type="text/javascript">
+editAreaLoader.init({
+	id : "textarea_2"		// textarea id
+	,syntax: "css"			// syntax to be uses for highgliting
+	,start_highlight: true		// to display with highlight mode on start-up
+});
+</script>
+<textarea id="textarea_2" name="probcode" cols="175" rows="15">
+</textarea>
+<br><br>
+Insert Problem Test Cases<br>
+(Please note that they have to be exactly how the input should be formatted in the problem)<br>
+<textarea id="textarea_3" name="probtestcases" cols="175" rows="15">
+</textarea>
+<input type="submit" value="Submit Problem Details..">
+
+</html>
+
+<html>
+
+<input action="action" type="button" value="Go Back" onclick="history.go(-1);" />
+</html>
+

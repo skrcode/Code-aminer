@@ -1,0 +1,21 @@
+<html>
+
+<form name="input" method="post">
+Enter Text<pre><textarea name=txtArea wrap=physical rows=10 cols=40 onkeyup=limiter()></textarea></pre>
+<input type="submit" value="Submit">
+</form>
+
+<?php
+echo $_POST["txtArea"];
+// Create connection
+$con=mysqli_connect("localhost","root","","my_db");
+
+$query = "INSERT INTO Problem (ProbName,ProbID,TotalAcc,TotalSub,ProbDescp) VALUES ('abc',1,1,1,'def');"; 
+ 
+if (mysqli_query($con,$query)) {
+  echo "Database my_db created successfully";
+} else {
+  echo "Error creating database: " . mysqli_error($con);
+}
+?>
+</html>

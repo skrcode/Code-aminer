@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <iframe src="progdesc1.txt" width="1250" height="500">
+    </iframe>
+  </body>
+</html>
+</html>
+
+<html>
+<head>
+<title>EditArea Test</title>
+<script language="javascript" type="text/javascript" src="editor/editarea_0_8_2/edit_area/edit_area_full.js"></script>
+<script language="javascript" type="text/javascript">
+editAreaLoader.init({
+	id : "textarea_1"		// textarea id
+	,syntax: "css"			// syntax to be uses for highgliting
+	,start_highlight: true		// to display with highlight mode on start-up
+});
+</script>
+</head>
+<body>
+<form action="checker.php" method="post">
+	<textarea id="textarea_1" name="content" cols="80" rows="15">
+</textarea>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+
+</html>

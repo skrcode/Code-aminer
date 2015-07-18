@@ -1,0 +1,19 @@
+<html>
+<body>
+Sample Problem
+
+Q. Write a program to output sum of 2 integers.<br> 
+   Sample Input<br>
+   2 3<br>
+   Sample Output<br>
+   5<br>
+   Please save your file in Student Programs directory. Choose the appropriate program file<br>
+   for upload<br>
+
+Browse file here<br>
+<form action="checker.php" method="post">
+<input name="Filepath" type="file">
+<input value="Upload.." type="submit">
+</form>
+</body>
+</html>
