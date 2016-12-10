@@ -1,6 +1,6 @@
 # Code-aminer
 
-<br/> <i> Warning : Cluttered code-base </i> <br/>
+<br/> <i> <b> Warning : Cluttered code-base </b> </i> <br/>
 Online code checking application which reads students' codes and allocates grades depending on its correctness. Coded using PHP,HTML,C and used MYSQL database<br/>
 
 Run mainfile.htm<br/>
